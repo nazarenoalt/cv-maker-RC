@@ -1,0 +1,36 @@
+.App {
+  display: grid;
+  grid-template-areas: "sidebar header header"
+    "sidebar body body"
+    "sidebar body body";
+  grid-template-columns: 9rem auto auto;
+  grid-template-rows: auto 1fr 1fr;
+  background-color: var(--paper-background);
+  color: var(--paper-color);
+  width: 30rem;
+  min-width: 440px;
+  height: 42.43rem;
+  min-height: 622.26px;
+  font-size: 1rem;
+  box-shadow: 10px 10px 25px rgb(0 0 0 / 10%);
+  font-size: .8rem;
+  /*configuration for complete screen*/
+}
+
+.Secondary-paper {
+  grid-template-areas: "body body body"
+    "body body body"
+    "body body body";
+}
+
+.Paper__Sidebar {
+  grid-area: sidebar;
+}
+
+.Paper__Header {
+  grid-area: header;
+}
+
+.Paper__Body {
+  grid-area: body;
+}

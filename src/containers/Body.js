@@ -1,10 +1,10 @@
 import React from 'react'
 import '../styles/Body.css'
 
-const Body = () => {
+const Body = ({ children }) => {
   return (
-    <div>
-      
+    <div className="Body">
+      {children}
     </div>
   )
 }

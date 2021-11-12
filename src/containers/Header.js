@@ -1,10 +1,10 @@
 import React from 'react'
-import '../styles/Body.css'
+import '../styles/Header.css'
 
-const Header = () => {
+const Header = ({ children }) => {
   return (
-    <div>
-      
+    <div className="Header">
+      {children}
     </div>
   )
 }

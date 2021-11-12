@@ -1,10 +1,10 @@
 import React from 'react'
-import '../styles/Body.css'
+import '../styles/Sidebar.css'
 
-const Sidebar = () => {
+const Sidebar = ({ children }) => {
   return (
-    <div>
-      
+    <div className="Sidebar">
+      {children}
     </div>
   )
 }
