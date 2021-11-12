@@ -1,38 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&display=swap');
+
 :root {
   /*colors*/
   --white: rgb(255, 255, 255);
   --black: rgb(0, 0, 0);
-  --blue: rgb(49, 118, 224);
-  --blue: rgb(49, 118, 224);
-  --transparent-blue: rgba(49, 118, 224, 0.502);
-  --mid-transparent-blue: rgba(49, 118, 224, 0.702);
-  --light-gray: rgb(240 240 240);
-  --very-light-gray: #f1f1f1;
+  --dark-gray: rgb(67, 66, 68);
+  --red: rgb(192, 32, 43);
   /*colors by section*/
   --body-background: var(--white);
-  --body-color: var(--black);
-  --paper-background: var(--white);
-  --body-link-color: var(--blue);
-  --paper-color: var(--black);
+  --body-color: var(--dark-gray);
+
   --header-background: var(--white);
-  --header-color: var(--black);
-  --header-user-info-background: var(--transparent-blue);
-  --sidebar-background: var(--blue);
+  --header-color: var(--dark-gray);
+
+  --sidebar-background: var(--dark-gray);
   --sidebar-color: var(--white);
-  --profile-image-background: var(--light-gray);
-  --tag-background-1: var(--blue);
-  --tag-background-2: var(--transparent-blue);
-  --tag-color: var(--white);
 }
 
 html {
   /*When changing HTML font-size, it's necessary to change Body.js "rem" state, because it calculate the rem measure apart*/
-  font-size: 2vw;
-  /*configuration for complete screen*/
-  /*with scroll*/
-  font-size: 3.307235318vw;
-  /*without scroll*/
-  font-size: 3.33vw;
+  font-size: 1.5vw;
+  /*complete screen width*/
 
 }
 
@@ -41,7 +29,6 @@ html {
 }
 
 body {
-  background-color: var(--light-gray);
   font-family: Lato, sans-serif;
 }
 
@@ -51,4 +38,8 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+h1, h2, h3 {
+  font-family: "Bebas Neue", sans-serif;
 }

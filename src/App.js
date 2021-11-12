@@ -1,23 +1,25 @@
-import React from "react";
+import React from "react"
+import './styles/Global.css'
 //container components
-import Header from './containers/Header';
-import Sidebar from './containers/Sidebar';
-import Body from './containers/Body';
+import Header from './containers/Header'
+import Sidebar from './containers/Sidebar'
+import Body from './containers/Body'
 //organisms/molecules components
-import AboutMe from './components/AboutMe';
-import Title from './components/Title';
-import Education from './components/Education';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import JobPosition from './components/JobPosition';
-import Languages from './components/Languages';
-import Repository from './components/Repository';
-import SocialNetworks from './components/SocialNetworks';
+import AboutMe from './components/AboutMe'
+import Title from './components/Title'
+import Education from './components/Education'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
+import JobPosition from './components/JobPosition'
+import Languages from './components/Languages'
+import Repository from './components/Repository'
+import SocialNetworks from './components/SocialNetworks'
 import Skills from './components/Skills'
 import Hobbies from './components/Hobbies'
-function App() {
+
+const App = () => {
   return (
-    <div>
+    <div className="App">
       <Header>
         <Title text="Nazareno Aznar Altamiranda" />
         <JobPosition text="React Developer Jr." />
@@ -139,7 +141,7 @@ function App() {
         />
       </Body>
     </div>
-  );
+  )
 }
 
 export default App;
