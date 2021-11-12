@@ -8,7 +8,7 @@ import AboutMe from './components/AboutMe';
 import Title from './components/Title';
 import Education from './components/Education';
 import Contact from './components/Contact';
-import Footer from './components/AboutMe';
+import Footer from './components/Footer';
 import JobPosition from './components/JobPosition';
 import Languages from './components/Languages';
 import Repository from './components/Repository';
@@ -43,14 +43,18 @@ function App() {
             {
               title:"Linkedin",
               content:"linkedin.com/nazarenoalt"
+            },
+            {
+              title:"Platzi",
+              content:"platzi.com/p/nazarenoalt"
             }
           ]} 
         />
-        <Footer />
         <Skills 
           hardSkills={["Javascript", "HTML & CSS", "React", "MongoDB", "Webpack", "Babel","Git & Github", "NPM", "Bootstrap", "JSON/API managment"]}
           softSkills={["Comunicación asertiva", "Oratoria"]}
         />
+        <Footer />
       </Sidebar>
 
       <Body>

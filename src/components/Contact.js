@@ -7,7 +7,7 @@ const Contact = ({ data }) => {
       <h2>Contacto</h2>
       <ul>
         {data.map(item => (
-        <li>
+        <li key={item.title}>
           <h3>{item.title}</h3>
           <span>{item.content}</span>
         </li>

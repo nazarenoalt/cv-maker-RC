@@ -3,8 +3,10 @@ import '../styles/Footer.css'
 
 const Footer = () => {
   return (
-    <div>
-      
+     <div className="Footer">
+      <small>
+        Created in React by <a href="github.com/nazarenoalt">@nazarenoalt</a>
+      </small>
     </div>
   )
 }
