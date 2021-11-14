@@ -3,7 +3,7 @@ import '../styles/Contact.css'
 
 const Contact = ({ data }) => {
   return (
-    <div>
+    <div className="Contact Sidebar__item">
       <h2>Contacto</h2>
       <ul>
         {data.map(item => (

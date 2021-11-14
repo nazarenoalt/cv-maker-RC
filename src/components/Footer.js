@@ -5,7 +5,9 @@ const Footer = () => {
   return (
      <div className="Footer">
       <small>
-        Created in React by <a href="github.com/nazarenoalt">@nazarenoalt</a>
+        Curriculum created in React by <a href="https://www.github.com/nazarenoalt">@nazarenoalt</a>
+        <br />
+        <a href={`https://www.github.com/nazarenoalt/`}>sourcecode</a>
       </small>
     </div>
   )

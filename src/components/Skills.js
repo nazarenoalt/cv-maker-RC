@@ -3,24 +3,29 @@ import '../styles/Skills.css'
 
 const Skills = ({ hardSkills, softSkills }) => {
   return (
-    <div>
-      <h2>Skills en desarrollo</h2>
+    <>
+    <div className="Skills Sidebar__item">
+      <h2>Habilidades</h2>
       <ul>
         {hardSkills.map(item => (
-          <li key={item}>
-            <span>{item}</span>
-          </li>
-        ))}
-      </ul>
-      <h2>Soft Skills</h2>
-      <ul>
-        {softSkills.map(item => (
-          <li key={item}>
+          <li key={item} className="Skills__li">
             <span>{item}</span>
           </li>
         ))}
       </ul>
     </div>
+      
+    <div className="Skills Sidebar__item">
+      <h2>Habilidades Blandas</h2>
+      <ul>
+        {softSkills.map(item => (
+          <li key={item} className="Skills__li">
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+    </>
   )
 }
 

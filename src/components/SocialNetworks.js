@@ -3,7 +3,7 @@ import '../styles/SocialNetworks.css'
 
 const SocialNetworks = ({ data }) => {
   return (
-    <div>
+    <div className="SocialNetworks Sidebar__item">
       <h2>Redes</h2>
       <ul>
         {data.map(item => (

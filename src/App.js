@@ -1,16 +1,17 @@
 import React from "react"
 import './styles/Global.css'
+import './styles/normalize.css'
+import './styles/App.css'
 //container components
 import Header from './containers/Header'
 import Sidebar from './containers/Sidebar'
 import Body from './containers/Body'
 //organisms/molecules components
 import AboutMe from './components/AboutMe'
-import Title from './components/Title'
+import HeaderProfile from './components/HeaderProfile'
 import Education from './components/Education'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-import JobPosition from './components/JobPosition'
 import Languages from './components/Languages'
 import Repository from './components/Repository'
 import SocialNetworks from './components/SocialNetworks'
@@ -21,61 +22,77 @@ const App = () => {
   return (
     <div className="App">
       <Header>
-        <Title text="Nazareno Aznar Altamiranda" />
-        <JobPosition text="React Developer Jr." />
+        <HeaderProfile userInfo={{
+          name: "Nazareno",
+          surname: "Aznar Altamiranda",
+          jobTitle: "Frontend | React Developer Jr."
+        }} />
       </Header>
 
       <Sidebar>
-        <Contact data={[
-          {
-            title:"Celular",
-            content:"(+54) 3644 724359"
-          },
-          {
-            title:"Email",
-            content:"nazalt256@gmail.com"
-          }
-        ]} />
-        <SocialNetworks 
-          data={[
-            {
-              title:"Github",
-              content:"github.com/nazarenoalt"
-            },
-            {
-              title:"Linkedin",
-              content:"linkedin.com/nazarenoalt"
-            },
-            {
-              title:"Platzi",
-              content:"platzi.com/p/nazarenoalt"
-            }
-          ]} 
+        
+        <div className="Sidebar__personal-info-section">
+           <AboutMe 
+          text="En constante aprendizaje, ductil y enfocado en el trabajo en equipo, buscando mejorar mis habilidades de desarrollo en proyectos desafiantes. Mi enfoque principal es mejorar y facilitar el acceso de la tecnología y la informacion a la poblacion, creando interfaces intuitivas y experiencias confortables para cualquier usuario."
         />
+          <Contact data={[
+            {
+              title:"Celular",
+              content:"(+54) 3644 724359"
+            },
+            {
+              title:"Email",
+              content:"nazalt256@gmail.com"
+            }
+          ]} />
+          <SocialNetworks 
+            data={[
+              {
+                title:"Github",
+                content:"github.com/nazarenoalt"
+              },
+              {
+                title:"Linkedin",
+                content:"linkedin.com/in/nazarenoalt"
+              },
+              {
+                title:"Platzi",
+                content:"platzi.com/p/nazarenoalt"
+              }
+            ]} 
+        />
+        </div>
         <Skills 
           hardSkills={["Javascript", "HTML & CSS", "React", "MongoDB", "Webpack", "Babel","Git & Github", "NPM", "Bootstrap", "JSON/API managment"]}
           softSkills={["Comunicación asertiva", "Oratoria"]}
+        />
+        <Hobbies 
+          hobbies={["Violonchelo", "Running & Fuerza", "Cocina", "Economía & Finanzas", "Cryptocurrencies"]}  
         />
         <Footer />
       </Sidebar>
 
       <Body>
-        <AboutMe 
-          text="En constante aprendizaje, ductil y enfocado en el trabajo en equipo, buscando mejorar mis habilidades de desarrollo en proyectos desafiantes. Mi enfoque principal es mejorar y facilitar el acceso de la tecnología y la informacion a la poblacion, creando interfaces intuitivas y experiencias confortables para cualquier usuario."
-        />
+       
         <Education 
           data={[
             {
               title: "Nivel Secundario",
-              content:"UEP N°82 \"Hogar de Bethania\""
+              institute:"UEP N°82 \"Hogar de Bethania\"",
+              description:"Saenz Peña, Chaco",
+              date:"2016",
             },
             {
               title: "Desarrollo Frontend",
-              content:"Escuela de Desarrollo Web & Escuela de Javascript - Platzi"
+              institute:"Platzi",
+              description:"Escuela de Desarrollo Web & Escuela de Javascript.",
+              date:"Oct. 2020 - Actualidad",
             },
             {
               title: "Ingles",
-              content:"Escuela de Ingles - Platzi"
+              institute:"Platzi",
+              description:"Escuela de ingles",
+              date:"Oct. 2020 - Actualidad",
             }
           ]}
         />
@@ -87,9 +104,7 @@ const App = () => {
             }
           ]}
         />
-        <Hobbies 
-          hobbies={["Violonchelo", "Running & Fuerza", "Cocina", "Economía y Política"]}  
-        />
+        
         <Repository 
           data={[
             {

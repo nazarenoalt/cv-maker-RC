@@ -3,12 +3,20 @@ import '../styles/Languages.css'
 
 const Languages = ({ data }) => {
   return (
-    <div>
+    <div className="Languages">
+      <h2 className="bottomLine">Lenguajes</h2>
       {data.map(item => (
-        <li key={item.title}>
-          <h3>{item.title}</h3>
-          <span>{item.content}</span>
-        </li>
+        <ul>
+          <li key={item.title} className="Languages__li">
+            <div>
+              <h3>{item.title}</h3>
+            </div>
+            <div>
+              <span>{item.content}</span>
+            </div>
+          </li>
+        </ul>
+        
         ))}
     </div>
   )
