@@ -9,7 +9,7 @@ const SocialNetworks = ({ data }) => {
         {data.map(item => (
         <li>
           <h3>{item.title}</h3>
-          <span>{item.content}</span>
+          <span><a href={`https://www.${item.content}`} target="_blank">{item.content}</a></span>
         </li>
         ))}
       </ul>

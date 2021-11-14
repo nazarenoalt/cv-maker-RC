@@ -23,7 +23,7 @@
 }
 
 .Sidebar__item > ul {
-  border-left: 1px solid var(--sidebar-color);
+  border-left: 0.05rem solid var(--sidebar-color);
   padding-left: 1.5rem;
   margin-left: 1.5rem;
 }
@@ -34,11 +34,19 @@
 .Sidebar .AboutMe {
   margin-bottom: 3rem;
   padding-bottom: 3rem;
-  border-bottom: 1px solid var(--sidebar-color);
+  border-bottom: 0.05rem solid var(--sidebar-color);
 }
 .Sidebar__personal-info-section {
   margin-bottom: 3rem;
   padding-bottom: 3rem;
-  border-bottom: 1px solid var(--sidebar-color);
+  border-bottom: 0.05rem solid var(--sidebar-color);
 }
 
+.Sidebar__item a {
+  color: var(--sidebar-color);
+  text-decoration: underline;
+}
+
+.Sidebar__item a:visited {
+  color: var(--sidebar-color);
+}

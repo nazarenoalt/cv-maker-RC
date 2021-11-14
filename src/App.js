@@ -64,10 +64,10 @@ const App = () => {
         </div>
         <Skills 
           hardSkills={["Javascript", "HTML & CSS", "React", "MongoDB", "Webpack", "Babel","Git & Github", "NPM", "Bootstrap", "JSON/API managment"]}
-          softSkills={["Comunicación asertiva", "Oratoria"]}
+          softSkills={["Comunicación asertiva", "Oratoria", "Pensamiento crítico"]}
         />
         <Hobbies 
-          hobbies={["Violonchelo", "Running & Fuerza", "Cocina", "Economía & Finanzas", "Cryptocurrencies"]}  
+          hobbies={["Violonchelo", "Running & Ejercicios de fuerza", "Cocina", "Economía & Finanzas", "Cryptocurrencies"]}  
         />
         <Footer />
       </Sidebar>
@@ -109,7 +109,7 @@ const App = () => {
           data={[
             {
               "title": "Bright Academy",
-              "content": "Plataforma de educación de ingles, sistema de usuarios, posts, autenticación por token.  - Javascript Vanilla, HTML y CSS, Consumiendo una API rest.",
+              "content": "Plataforma de educación para profesora de ingles, con sistema de usuarios, posts, autenticación por token. - Javascript Vanilla, HTML y CSS, Consumiendo una API rest.",
               "link": "github.com/nazarenoalt/bright-academy",
             },
             {
@@ -119,7 +119,7 @@ const App = () => {
             },
             {
               "title": "Piano Virtual SM",
-              "content": "Piano con minijuego que sigue la lógica del juego 'Simón Dice'. - Javascript Vanilla, HTML y CSS.",
+              "content": "Piano con minijuego que sigue la lógica de 'Simón Dice'. - Javascript Vanilla, HTML y CSS.",
               "link": "github.com/nazarenoalt/piano-virtual-SM",
             },
             {
