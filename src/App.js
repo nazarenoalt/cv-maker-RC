@@ -33,7 +33,7 @@ const App = () => {
         
         <div className="Sidebar__personal-info-section">
            <AboutMe 
-          text="En constante aprendizaje, ductil y enfocado en el trabajo en equipo, buscando mejorar mis habilidades de desarrollo en proyectos desafiantes. Mi enfoque principal es mejorar y facilitar el acceso de la tecnología y la informacion a la poblacion, creando interfaces intuitivas y experiencias confortables para cualquier usuario."
+          text="En constante aprendizaje, dúctil y enfocado en el trabajo en equipo, buscando mejorar mis habilidades de desarrollo en proyectos desafiantes. Mi enfoque principal es mejorar y facilitar el acceso de la tecnología y la información a la población, creando interfaces intuitivas y experiencias confortables para cualquier usuario."
         />
           <Contact data={[
             {
@@ -89,9 +89,9 @@ const App = () => {
               date:"Oct. 2020 - Actualidad",
             },
             {
-              title: "Ingles",
+              title: "Inglés",
               institute:"Platzi",
-              description:"Escuela de ingles",
+              description:"Escuela de inglés",
               date:"Oct. 2020 - Actualidad",
             }
           ]}
@@ -99,7 +99,7 @@ const App = () => {
         <Languages 
           data={[
             {
-              title:"Ingles",
+              title:"Inglés",
               content:"Avanzado - C2",
             }
           ]}
@@ -109,7 +109,7 @@ const App = () => {
           data={[
             {
               "title": "Bright Academy",
-              "content": "Plataforma de educación para profesora de ingles, con sistema de usuarios, posts, autenticación por token. - Javascript Vanilla, HTML y CSS, Consumiendo una API rest.",
+              "content": "Plataforma de educación para profesora de inglés, con sistema de usuarios, posts, autenticación por token. - Javascript Vanilla, HTML y CSS, Consumiendo una API rest.",
               "link": "github.com/nazarenoalt/bright-academy",
             },
             {
