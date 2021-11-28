@@ -16,7 +16,7 @@ import Skills from './components/Skills'
 import Hobbies from './components/Hobbies'
 // Styles
 import { Wrapper } from "./App.style"
-import './styles/normalize.css'
+import './normalize.css'
 
 const App = () => {
   return (
