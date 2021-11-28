@@ -1,12 +1,10 @@
 import styled from "styled-components"
 
 export const Wrapper = styled.div`
-  .App {
     display: grid;
     grid-template-areas: "sidebar header header"
       "sidebar body body"
       "sidebar body body";
-  }
 
   .Sidebar {
     grid-area: sidebar;

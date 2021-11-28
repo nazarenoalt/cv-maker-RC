@@ -7,6 +7,7 @@ export default createGlobalStyle`
   * {
     box-sizing: border-box;
   }
+  
   :root {
     /*colors*/
     --white: rgb(255, 255, 255);
@@ -53,24 +54,5 @@ export default createGlobalStyle`
   h1, h2 {
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
-  }
-  
-    .App {
-    display: grid;
-    grid-template-areas:  "sidebar header header"
-                          "sidebar body body"
-                          "sidebar body body";
-  }
-
-  .Sidebar {
-    grid-area: sidebar;
-  }
-
-  .Header {
-    grid-area: header;
-  }
-
-  .Body {
-    grid-area: body;
   }
 `

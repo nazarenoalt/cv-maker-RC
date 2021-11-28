@@ -4,9 +4,7 @@ import { Wrapper } from './Sidebar.style'
 const Sidebar = ({ children }) => {
   return (
     <Wrapper>
-      <div className="Sidebar">
         {children}
-      </div>
     </Wrapper>
   )
 }

@@ -21,7 +21,6 @@ import './styles/normalize.css'
 const App = () => {
   return (
     <Wrapper>
-      <div className="App">
         <Header>
           <HeaderProfile userInfo={{
             name: "Nazareno",
@@ -156,7 +155,6 @@ const App = () => {
             ]}
           />
         </Body>
-      </div>
     </Wrapper>
   )
 }

@@ -1,13 +1,12 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
-  .Body {
-    padding: 3rem;
-    padding-top: 0;
-    color: var(--dark-gray)
-  }
-
-  .Body h2 {
+  padding: 3rem;
+  padding-top: 0;
+  color: var(--dark-gray);
+  grid-area: body;
+  
+  h2 {
     color: var(--body-color);
     padding-bottom: .5rem;
   }
@@ -16,7 +15,7 @@ export const Wrapper = styled.div`
     border-bottom: 0.1rem solid var(--body-color);
   }
 
-  .Body h3 {
+  h3 {
     color: var(--body-secondary-color);
   }
 `

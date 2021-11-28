@@ -1,22 +1,20 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
-  .Sidebar {
-    height: 100%;
-    background-color: var(--sidebar-background);
-    color: var(--sidebar-color);
-    padding: 2rem;
-  }
+  height: 100%;
+  background-color: var(--sidebar-background);
+  color: var(--sidebar-color);
+  padding: 2rem;
+  grid-area: sidebar;
 
-  /*Changes that affect all items of sidebar*/
-
-  .Sidebar h3 {
+    /*Changes that affect all items of sidebar*/
+  h3 {
     font-size: 1rem;
     font-weight: bolder;
     margin-bottom: .2rem;
   }
 
-  .Sidebar h2 {
+  h2 {
     font-size: 1.3rem;
   }
 
@@ -34,7 +32,7 @@ export const Wrapper = styled.div`
     margin-bottom: 0;
   }
 
-  .Sidebar .AboutMe {
+  .AboutMe {
     margin-bottom: 3rem;
     padding-bottom: 3rem;
     border-bottom: 0.05rem solid var(--sidebar-color);
