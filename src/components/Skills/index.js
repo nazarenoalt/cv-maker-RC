@@ -1,9 +1,9 @@
 import React from 'react'
-import '../styles/Skills.css'
+import { Wrapper } from './Skills.style'
 
 const Skills = ({ hardSkills, softSkills }) => {
   return (
-    <>
+    <Wrapper>
     <div className="Skills Sidebar__item">
       <h2>Habilidades</h2>
       <ul>
@@ -25,7 +25,7 @@ const Skills = ({ hardSkills, softSkills }) => {
         ))}
       </ul>
     </div>
-    </>
+    </Wrapper>
   )
 }
 

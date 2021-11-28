@@ -1,14 +1,14 @@
 import React from 'react'
-import '../styles/HeaderProfile.css'
+import { Wrapper } from './HeaderProfile.style'
 
 const HeaderProfile = ({userInfo}) => {
   console.log(userInfo)
   return (
-    <div>
+    <Wrapper>
       <h1 className="Header__title">{userInfo.name}</h1>
       <h1 className="Header__title">{userInfo.surname}</h1>
       <p className="Header__jobTitle">{userInfo.jobTitle}</p>
-    </div>
+    </Wrapper>
   )
 }
 
