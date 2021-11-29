@@ -17,10 +17,12 @@ import Hobbies from './components/Hobbies'
 // Styles
 import { Wrapper } from "./App.style"
 import './normalize.css'
+import PrintPdfButton from "./components/PrintPdfButton"
 
 const App = () => {
   return (
     <Wrapper>
+      <PrintPdfButton />
       <Header>
         <HeaderProfile userInfo={{
           name: "Nazareno",
