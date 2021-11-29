@@ -5,7 +5,7 @@ const Contact = ({ data }) => {
   return (
     <Wrapper>
       <div className="Contact Sidebar__item">
-        <h2>Contacto</h2>
+        <h2>Contact</h2>
         <ul>
           {data.map(item => (
           <li key={item.title}>

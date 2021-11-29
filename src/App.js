@@ -89,7 +89,7 @@ const App = () => {
               date:"Oct. 2020 - present",
             },
             {
-              title: "Inglés",
+              title: "English",
               institute:"Platzi",
               description:"English School",
               date:"Oct. 2020 - present",

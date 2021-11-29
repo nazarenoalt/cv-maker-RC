@@ -5,7 +5,7 @@ const Education = ({ data }) => {
   return (
     <Wrapper>
       <div className="Education">
-        <h2 className="bottomLine">Educacion</h2>
+        <h2 className="bottomLine">Education</h2>
         {data.map(item => (
           <li key={item.title} className="Education__li">
             <div>

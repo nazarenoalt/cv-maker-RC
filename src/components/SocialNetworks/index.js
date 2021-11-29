@@ -4,7 +4,7 @@ const SocialNetworks = ({ data }) => {
   return (
     <Wrapper>
       <div className="SocialNetworks Sidebar__item">
-        <h2>Redes</h2>
+        <h2>Social Networks</h2>
         <ul>
           {data.map(item => (
           <li>

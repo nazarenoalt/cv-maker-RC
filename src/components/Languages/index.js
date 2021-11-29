@@ -5,7 +5,7 @@ const Languages = ({ data }) => {
   return (
     <Wrapper>
       <div className="Languages">
-        <h2 className="bottomLine">Lenguajes</h2>
+        <h2 className="bottomLine">Languages</h2>
         {data.map(item => (
           <ul>
             <li key={item.title} className="Languages__li">

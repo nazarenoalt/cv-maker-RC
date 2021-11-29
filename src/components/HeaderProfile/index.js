@@ -2,7 +2,6 @@ import React from 'react'
 import { Wrapper } from './HeaderProfile.style'
 
 const HeaderProfile = ({userInfo}) => {
-  console.log(userInfo)
   return (
     <Wrapper>
       <h1 className="Header__title">{userInfo.name}</h1>
