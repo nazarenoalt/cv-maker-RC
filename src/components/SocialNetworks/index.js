@@ -3,7 +3,7 @@ import { Wrapper } from './SocialNetworks.style'
 const SocialNetworks = ({ data }) => {
   return (
     <Wrapper>
-      <div className="SocialNetworks Sidebar__item">
+      <div className="item">
         <h2>Social Networks</h2>
         <ul>
           {data.map(item => (

@@ -4,7 +4,7 @@ import { Wrapper } from './Contact.style'
 const Contact = ({ data }) => {
   return (
     <Wrapper>
-      <div className="Contact Sidebar__item">
+      <div className="item">
         <h2>Contact</h2>
         <ul>
           {data.map(item => (
