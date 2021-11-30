@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
     padding-bottom: .5rem;
   }
 
-  .bottomLine {
+  .title-separator {
     border-bottom: 0.1rem solid var(--body-color);
   }
 

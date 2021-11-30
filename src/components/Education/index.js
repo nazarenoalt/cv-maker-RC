@@ -4,21 +4,19 @@ import { Wrapper } from './Education.style'
 const Education = ({ data }) => {
   return (
     <Wrapper>
-      <div className="Education">
-        <h2 className="bottomLine">Education</h2>
+        <h2 className="title-separator">Education</h2>
         {data.map(item => (
-          <li key={item.title} className="Education__li">
+          <li key={item.title}>
             <div>
               <h3>{item.institute}</h3>
-              <p className="Education__li-description">{item.description}<br />{item.date}</p>
-              
+              <p className="description">{item.description}<br />{item.date}</p>
             </div>
+            
             <div>
               <h3>{item.title}</h3>
             </div>
           </li>
           ))}
-      </div>
     </Wrapper>
   )
 }
