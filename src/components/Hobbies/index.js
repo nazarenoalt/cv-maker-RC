@@ -4,7 +4,7 @@ import { Wrapper } from './Hobbies.style'
 const Hobbies = ({ hobbies }) => {
   return (
     <Wrapper>
-      <div className="Sidebar__item">
+      <div className="item">
         <h2>Hobbies</h2>
         <ul>
         {hobbies.map(item => (
