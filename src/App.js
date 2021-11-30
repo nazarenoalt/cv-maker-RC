@@ -14,40 +14,40 @@ import Repository from './components/Repository'
 import SocialNetworks from './components/SocialNetworks'
 import Skills from './components/Skills'
 import Hobbies from './components/Hobbies'
+import PrintPdfButton from "./components/PrintPdfButton"
 // Styles
 import { Wrapper } from "./App.style"
 import './normalize.css'
-import PrintPdfButton from "./components/PrintPdfButton"
 // Data
-import data from "./db"
+// Hooks
+import useLocalStorage from "./hooks/useLocalStorage"
 
 const App = () => {
-  const initialState = {...data}
-  const [state, setState] = useState(initialState);
+  const { userData, setUserData } = useLocalStorage()
   
   return (
     <Wrapper>
       <PrintPdfButton />
       <Header>
-        <HeaderProfile userInfo={state.header} />
+        <HeaderProfile userInfo={userData.header} />
       </Header>
 
       <Sidebar>
         <div className="Sidebar__personal-info-section">
-          <AboutMe text={state.header.text} />
-          <Contact data={state.contact} />
-          <SocialNetworks  data={state.SocialNetworks} />
+          <AboutMe text={userData.header.text} />
+          <Contact data={userData.contact} />
+          <SocialNetworks  data={userData.SocialNetworks} />
         </div>
 
-        <Skills hardSkills={state.hardSkills} softSkills={state.softSkills} />
-        <Hobbies hobbies={state.hobbies} />
+        <Skills hardSkills={userData.hardSkills} softSkills={userData.softSkills} />
+        <Hobbies hobbies={userData.hobbies} />
         <Footer />
       </Sidebar>
 
       <Body>
-        <Education data={state.education} />
-        <Languages data={state.languages} />
-        <Repository data={state.repository} />
+        <Education data={userData.education} />
+        <Languages data={userData.languages} />
+        <Repository data={userData.repository} />
       </Body>
       
     </Wrapper>
