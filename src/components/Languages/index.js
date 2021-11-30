@@ -4,11 +4,11 @@ import { Wrapper } from './Languages.style'
 const Languages = ({ data }) => {
   return (
     <Wrapper>
-      <div className="Languages">
         <h2 className="title-separator">Languages</h2>
         {data.map(item => (
           <ul>
-            <li key={item.title} className="Languages__li">
+            <li key={item.title}>
+              {/*each div is a column*/}
               <div>
                 <h3>{item.title}</h3>
               </div>
@@ -19,7 +19,6 @@ const Languages = ({ data }) => {
           </ul>
           
           ))}
-      </div>
     </Wrapper>
   )
 }
