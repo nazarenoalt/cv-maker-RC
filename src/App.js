@@ -15,6 +15,7 @@ import SocialNetworks from './components/SocialNetworks'
 import Skills from './components/Skills'
 import Hobbies from './components/Hobbies'
 import PrintPdfButton from "./components/PrintPdfButton"
+import SeparatorLine from "./components/SeparatorLine"
 // Styles
 import { Wrapper } from "./App.style"
 import './normalize.css'
@@ -33,11 +34,13 @@ const App = () => {
       </Header>
 
       <Sidebar>
-        <div className="Sidebar__personal-info-section">
-          <AboutMe text={userData.header.text} />
-          <Contact data={userData.contact} />
-          <SocialNetworks  data={userData.SocialNetworks} />
-        </div>
+        <AboutMe text={userData.header.text} />
+        {/* An innocent separator line */}
+        <SeparatorLine />
+        <Contact data={userData.contact} />
+        <SocialNetworks  data={userData.SocialNetworks} />
+        {/* An innocent separator line */}
+        <SeparatorLine /> 
 
         <Skills hardSkills={userData.hardSkills} softSkills={userData.softSkills} />
         <Hobbies hobbies={userData.hobbies} />

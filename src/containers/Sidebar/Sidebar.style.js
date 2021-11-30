@@ -37,11 +37,6 @@ export const Wrapper = styled.div`
     padding-bottom: 3rem;
     border-bottom: 0.05rem solid var(--sidebar-color);
   }
-  .Sidebar__personal-info-section {
-    margin-bottom: 3rem;
-    padding-bottom: 3rem;
-    border-bottom: 0.05rem solid var(--sidebar-color);
-  }
 
   .Sidebar__item a {
     color: var(--sidebar-color);

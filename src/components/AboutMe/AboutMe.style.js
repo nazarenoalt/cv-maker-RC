@@ -1,11 +1,8 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  .AboutMe{
-    margin-bottom: 4rem;
-  }
-
-  .AboutMe p {
-    line-height: 1.3rem;
+  p {
+    line-height: 1.4rem;
+    margin-bottom: 0;
   }
 `
