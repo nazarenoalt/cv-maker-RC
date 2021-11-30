@@ -31,7 +31,6 @@ export default createGlobalStyle`
     
     /*When changing HTML font-size, it's necessary to change Body.js "rem" state, because it calculate the rem measure apart*/
     font-size: 1.5vw;
-    /*complete screen width*/
   }
 
   ::-webkit-scrollbar {
@@ -55,4 +54,6 @@ export default createGlobalStyle`
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
   }
+ 
 `
+
