@@ -4,22 +4,22 @@ import { Wrapper } from './Skills.style'
 const Skills = ({ hardSkills, softSkills }) => {
   return (
     <Wrapper>
-    <div className="Skills Sidebar__item">
+    <div className="item">
       <h2>Skills</h2>
       <ul>
         {hardSkills.map(item => (
-          <li key={item} className="Skills__li">
+          <li key={item}>
             <span>{item}</span>
           </li>
         ))}
       </ul>
     </div>
       
-    <div className="Skills Sidebar__item">
+    <div className="item">
       <h2>Soft Skills</h2>
       <ul>
         {softSkills.map(item => (
-          <li key={item} className="Skills__li">
+          <li key={item}>
             <span>{item}</span>
           </li>
         ))}
