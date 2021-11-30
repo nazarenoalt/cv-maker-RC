@@ -8,7 +8,7 @@ const Hobbies = ({ hobbies }) => {
         <h2>Hobbies</h2>
         <ul>
         {hobbies.map(item => (
-          <li key={item} className="Skills__li">
+          <li key={item}>
             <span>{item}</span>
           </li>
         ))}
