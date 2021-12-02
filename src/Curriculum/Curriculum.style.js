@@ -11,7 +11,9 @@ export const Wrapper = styled.div`
                        "sidebar body body";
 
   grid-template-columns  : repeat(3, 1fr) ;
-
+  margin: 2em;
+  box-shadow: 0 0  100px rgba(0,0,0,0.9);
+  
   .Sidebar {
     grid-area: sidebar;
   }

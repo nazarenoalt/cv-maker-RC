@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 // Data
-import data from "../db"
+import data from "../Curriculum/db"
 
 const useLocalStorage = () => {
   const initialData = {...data}

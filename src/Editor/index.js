@@ -1,11 +1,14 @@
 import React, { useLayoutEffect, useState } from 'react'
+// Components
 import Curriculum from '../Curriculum'
+import Form from '../Form'
+// Styles
 import { Wrapper, Container } from './Editor.style'
 
 const Editor = () => {
   const [width, setWidth] = useState(0)
 
-  // getting width of the curriculum container
+  // Getting width of the curriculum container
   useLayoutEffect(() => {
     const container = document.querySelector('#cv-container')
 
@@ -14,10 +17,10 @@ const Editor = () => {
       setWidth(widthContainer)
     }
 
-    //first time execution
+    // First time execution
     updateSize();
 
-    //each time container resizes updateSize will be executed
+    // Each time container resizes updateSize will be executed
     window.addEventListener('resize', updateSize)
 
     return () => window.removeEventListener('resize', updateSize)
@@ -27,9 +30,10 @@ const Editor = () => {
   return (
     <Wrapper>
       <Container>
+        <Form />
       </Container>
       <Container>
-        {/*This div is necessary to catch the curriculum parent width*/}
+        {/* This div is necessary to catch the curriculum parent width */}
         <div id="cv-container">
           <Curriculum width={width}/>
         </div>

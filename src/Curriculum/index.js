@@ -20,7 +20,7 @@ import SeparatorLine from "./components/SeparatorLine"
 import { Wrapper } from "./Curriculum.style"
 // Data
 // Hooks
-import useLocalStorage from "./hooks/useLocalStorage"
+import useLocalStorage from "../hooks/useLocalStorage"
 
 const Curriculum = ({ width }) => {
   const { userData, setUserData } = useLocalStorage()
