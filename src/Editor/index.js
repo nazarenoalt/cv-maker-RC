@@ -27,13 +27,12 @@ const Editor = () => {
   return (
     <Wrapper>
       <Container>
+      </Container>
+      <Container>
         {/*This div is necessary to catch the curriculum parent width*/}
         <div id="cv-container">
           <Curriculum width={width}/>
         </div>
-
-      </Container>
-      <Container>
       </Container>
     </Wrapper>
   )

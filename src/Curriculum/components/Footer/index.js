@@ -6,9 +6,7 @@ const Footer = () => {
   return (
     <Wrapper>
         <small>
-          Curriculum created in React by <a href="https://www.github.com/nazarenoalt" target="_blank">@nazarenoalt</a>
-          <br />
-          <a href={`https://www.github.com/nazarenoalt/curriculum-v2`} target="_blank">sourcecode</a>
+          Curriculum created in <a href={`https://www.github.com/nazarenoalt/cv-maker`} target="_blank"> cv-maker</a>, a totally free and open-source editor.
         </small>
     </Wrapper>
   )
