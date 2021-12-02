@@ -3,8 +3,8 @@ import styled from "styled-components"
 /* Next thing to do is to replace font-size value by the width of parent component */
 
 export const Wrapper = styled.div`
-
-  font-size: ${((document.querySelector("body").offsetWidth /2) / 100) * 1.5}px;
+  
+  font-size: ${props => props.width / 100 * 1.5}px;
   display: grid;
   grid-template-areas: "sidebar header header"
                        "sidebar body body"

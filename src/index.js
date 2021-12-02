@@ -5,6 +5,8 @@ import App from './App';
 // Styles
 import GlobalStyle from './Global.style'
 
+  console.log('a')
+
 ReactDOM.render(
   <React.StrictMode>
     <App />

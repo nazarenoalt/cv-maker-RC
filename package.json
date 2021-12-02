@@ -1,8 +1,8 @@
 {
-  "name": "curriculum-v2",
+  "name": "cv-maker",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://nazarenoalt.github.io/curriculum-v2",
+  "homepage": "https://nazarenoalt.github.io/cv-maker",
   "dependencies": {
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^11.2.7",

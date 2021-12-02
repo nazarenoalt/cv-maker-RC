@@ -22,11 +22,10 @@ import { Wrapper } from "./Curriculum.style"
 // Hooks
 import useLocalStorage from "./hooks/useLocalStorage"
 
-const Curriculum = () => {
+const Curriculum = ({ width }) => {
   const { userData, setUserData } = useLocalStorage()
-  
   return (
-    <Wrapper>
+    <Wrapper width={width}>
       <PrintPdfButton />
       <Header>
         <HeaderProfile userInfo={userData.header} />
