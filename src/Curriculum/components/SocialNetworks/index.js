@@ -7,9 +7,9 @@ const SocialNetworks = ({ data }) => {
         <h2>Social Networks</h2>
         <ul>
           {data.map(item => (
-          <li>
+          <li key={item.title}>
             <h3>{item.title}</h3>
-            <span><a href={`https://www.${item.content}`} target="_blank">{item.content}</a></span>
+            <span><a href={`https://www.${item.content}`} target="_blank" rel="noreferrer">{item.content} </a></span>
           </li>
           ))}
         </ul>

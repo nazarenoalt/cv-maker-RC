@@ -6,7 +6,6 @@ const Languages = ({ data }) => {
     <Wrapper>
         <h2 className="title-separator">Languages</h2>
         {data.map(item => (
-          <ul>
             <li key={item.title}>
               {/*each div is a column*/}
               <div>
@@ -16,8 +15,6 @@ const Languages = ({ data }) => {
                 <span>{item.content}</span>
               </div>
             </li>
-          </ul>
-          
           ))}
     </Wrapper>
   )

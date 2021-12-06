@@ -1,9 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Lato&family=Oswald&display=swap');
-
   * {
     box-sizing: border-box;
   }

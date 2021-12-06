@@ -12,7 +12,7 @@ const Repository = ({ data }) => {
             <div className="project-content">
               <span>{item.content}</span>
               <p className="project-description">
-                <a target="_blank" href={`https://www.${item.link}`}>{item.link}</a>
+                <a target="_blank" rel="noreferrer" href={`https://www.${item.link}`}>{item.link}</a>
               </p>
             </div>
           </li>
