@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 // Container components
 import Header from './containers/Header'
 import Sidebar from './containers/Sidebar'
@@ -20,10 +20,11 @@ import SeparatorLine from "./components/SeparatorLine"
 import { Wrapper } from "./Curriculum.style"
 // Data
 // Hooks
-import useLocalStorage from "../hooks/useLocalStorage"
 
-const Curriculum = ({ width }) => {
-  const { userData, setUserData } = useLocalStorage()
+
+const Curriculum = ({ userData, width }) => {
+  
+  console.log(userData)
   return (
     <Wrapper width={width}>
       <PrintPdfButton />
@@ -32,7 +33,7 @@ const Curriculum = ({ width }) => {
       </Header>
 
       <Sidebar>
-        <AboutMe text={userData.header.text} />
+        <AboutMe text={userData.header.description} />
         {/* An innocent separator line */}
         <SeparatorLine />
         <Contact data={userData.contact} />

@@ -1,16 +1,15 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 // Data
-import data from "../Curriculum/db"
+import initialData from "../Form/initialData"
 
 const useLocalStorage = () => {
-  const initialData = {...data}
   const [userData, setUserData] = useState(initialData);
-
   const localStorage = window.localStorage;
 
   useEffect(() => {
     localStorage.setItem('userInfo', JSON.stringify(userData))
-  }, [userData, setUserData])
+    console.log('userdata')
+  }, [userData, setUserData, localStorage])
 
   return {
     userData,

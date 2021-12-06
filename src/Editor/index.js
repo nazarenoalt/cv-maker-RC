@@ -4,9 +4,13 @@ import Curriculum from '../Curriculum'
 import Form from '../Form'
 // Styles
 import { Wrapper, Container } from './Editor.style'
+// Hooks
+import useLocalStorage from "../hooks/useLocalStorage"
 
 const Editor = () => {
   const [width, setWidth] = useState(0)
+
+  const { userData } = useLocalStorage()
 
   // Getting width of the curriculum container
   useLayoutEffect(() => {
@@ -35,7 +39,7 @@ const Editor = () => {
       <Container>
         {/* This div is necessary to catch the curriculum parent width */}
         <div id="cv-container">
-          <Curriculum width={width}/>
+          <Curriculum width={width} userData={userData} />
         </div>
       </Container>
     </Wrapper>

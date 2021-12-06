@@ -1,36 +1,31 @@
 import React from 'react'
 import PrintPdfButton from '../Curriculum/components/PrintPdfButton'
 import { Wrapper } from './Form.style'
-import initialData from './initialData'
+import useLocalStorage from '../hooks/useLocalStorage'
 
 const Form = () => {
- 
-  const [form, setForm] = React.useState(initialData)
-  
-const handleChange = e => {
-  const { name, value } = e.target
 
-  setForm(prevState => {
-    if(name === "firstName" || "lastName" || "jobTitle" || "description") {
-      console.log('header')
-      return (
-        {
-          ...prevState,
-          header: {
-            ...prevState.header,
-            [name]:value
-        }
-        }
-      )
-      console.log('raiz')
-    }
+  const { userData, setUserData } = useLocalStorage();
 
-    return ({
-      ...prevState,
-      [name]: value
-  })
-  })
-}
+  // Event handler
+  const handleChange = e => {
+    const { name, value } = e.target
+
+    setUserData(prevState => {
+      if(name === "firstName" || "lastName" || "jobTitle" || "description") {
+        return (
+          {
+            ...prevState,
+            header: {
+              ...prevState.header,
+              [name]:value
+          }
+          }
+        )
+      }
+
+    })
+  }
 
   return (
     <Wrapper>
@@ -41,7 +36,7 @@ const handleChange = e => {
           type="text"
           id="firstName"
           name="firstName"
-          value={form.name}
+          value={userData.name}
           onChange={handleChange}  
         />
 
@@ -50,7 +45,7 @@ const handleChange = e => {
           type="text"
           id="lastName"
           name="lastName"
-          value={form.name}
+          value={userData.name}
           onChange={handleChange}  
         />
 
@@ -59,7 +54,7 @@ const handleChange = e => {
           type="text"
           id="jobTitle"
           name="jobTitle"
-          value={form.name}
+          value={userData.name}
           onChange={handleChange}  
         />
 
@@ -67,7 +62,7 @@ const handleChange = e => {
         <textarea
           id="description"
           name="description"
-          value={form.description}
+          value={userData.description}
           onChange={handleChange}
         />
 
