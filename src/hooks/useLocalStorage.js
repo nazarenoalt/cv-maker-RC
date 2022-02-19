@@ -1,12 +1,16 @@
 import React, { useState, useEffect } from 'react'
 // Data
-import data from "../Curriculum/db"
+import data from "../initialData.js"
 
 const useLocalStorage = () => {
   const initialData = {...data}
-  const [userData, setUserData] = useState(initialData);
-
   const localStorage = window.localStorage;
+  const localUserData = localStorage.getItem('userInfo')
+  const [userData, setUserData] = useState(() => localUserData ? JSON.parse(localUserData) : initialData);
+
+  const resetLocalStorage = () => {
+    setUserData(initialData)
+  }
 
   useEffect(() => {
     localStorage.setItem('userInfo', JSON.stringify(userData))
@@ -14,7 +18,8 @@ const useLocalStorage = () => {
 
   return {
     userData,
-    setUserData
+    setUserData,
+    resetLocalStorage
   }
 }
 

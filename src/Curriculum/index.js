@@ -20,10 +20,10 @@ import SeparatorLine from "./components/SeparatorLine"
 import { Wrapper } from "./Curriculum.style"
 // Data
 // Hooks
-import useLocalStorage from "../hooks/useLocalStorage"
 
-const Curriculum = ({ width }) => {
-  const { userData, setUserData } = useLocalStorage()
+const Curriculum = ({ width, userData }) => {
+  console.log(userData.header)
+  console.log('arriba esta la data')
   return (
     <Wrapper width={width}>
       <PrintPdfButton />
@@ -32,7 +32,7 @@ const Curriculum = ({ width }) => {
       </Header>
 
       <Sidebar>
-        <AboutMe text={userData.header.text} />
+        <AboutMe text={userData.header.description} />
         {/* An innocent separator line */}
         <SeparatorLine />
         <Contact data={userData.contact} />

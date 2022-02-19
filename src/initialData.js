@@ -1,5 +1,4 @@
-const initialData = {
-  //header
+const data = {
   header: {
     firstName: "First Name",
     lastName: "Last Name",
@@ -75,4 +74,4 @@ experience: [
 ]
 }
 
-export default initialData
+export default data

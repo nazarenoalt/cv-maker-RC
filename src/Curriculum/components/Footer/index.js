@@ -1,5 +1,4 @@
 import React from 'react'
-import './Footer.style.js'
 import { Wrapper } from './Footer.style.js'
 
 const Footer = () => {

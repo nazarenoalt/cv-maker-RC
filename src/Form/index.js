@@ -1,36 +1,26 @@
 import React from 'react'
 import PrintPdfButton from '../Curriculum/components/PrintPdfButton'
+// styles
 import { Wrapper } from './Form.style'
-import initialData from './initialData'
+// hooks
+import useLocalStorage from '../hooks/useLocalStorage'
 
-const Form = () => {
- 
-  const [form, setForm] = React.useState(initialData)
-  
-const handleChange = e => {
-  const { name, value } = e.target
+const Form = ({ userData, setUserData }) => {
 
-  setForm(prevState => {
-    if(name === "firstName" || "lastName" || "jobTitle" || "description") {
-      console.log('header')
-      return (
-        {
-          ...prevState,
-          header: {
-            ...prevState.header,
-            [name]:value
-        }
-        }
-      )
-      console.log('raiz')
-    }
+  const handleChange = e => {
+    const { name, value, index } = e.target
 
-    return ({
-      ...prevState,
-      [name]: value
-  })
-  })
-}
+    setUserData(prevState => {
+      if(name === "firstName" || "lastName" || "jobTitle" || "description") {
+        const header = { ...prevState.header }
+        header[name] = value;
+      
+      return {
+        ...prevState,
+        header
+      }
+    }})
+  }
 
   return (
     <Wrapper>
@@ -41,7 +31,7 @@ const handleChange = e => {
           type="text"
           id="firstName"
           name="firstName"
-          value={form.name}
+          value={userData.name}
           onChange={handleChange}  
         />
 
@@ -50,7 +40,7 @@ const handleChange = e => {
           type="text"
           id="lastName"
           name="lastName"
-          value={form.name}
+          value={userData.name}
           onChange={handleChange}  
         />
 
@@ -59,7 +49,7 @@ const handleChange = e => {
           type="text"
           id="jobTitle"
           name="jobTitle"
-          value={form.name}
+          value={userData.name}
           onChange={handleChange}  
         />
 
@@ -67,7 +57,7 @@ const handleChange = e => {
         <textarea
           id="description"
           name="description"
-          value={form.description}
+          value={userData.description}
           onChange={handleChange}
         />
 
