@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 // Container components
 import Header from './containers/Header'
 import Sidebar from './containers/Sidebar'
@@ -18,12 +18,8 @@ import PrintPdfButton from "./components/PrintPdfButton"
 import SeparatorLine from "./components/SeparatorLine"
 // Styles
 import { Wrapper } from "./Curriculum.style"
-// Data
-// Hooks
 
 const Curriculum = ({ width, userData }) => {
-  console.log(userData.header)
-  console.log('arriba esta la data')
   return (
     <Wrapper width={width}>
       <PrintPdfButton />

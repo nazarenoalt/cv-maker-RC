@@ -2,8 +2,6 @@ import React from 'react'
 import PrintPdfButton from '../Curriculum/components/PrintPdfButton'
 // styles
 import { Wrapper } from './Form.style'
-// hooks
-import useLocalStorage from '../hooks/useLocalStorage'
 
 const Form = ({ userData, setUserData }) => {
 

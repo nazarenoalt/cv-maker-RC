@@ -11,6 +11,8 @@ const Editor = () => {
   const [width, setWidth] = useState(0)
   const { userData, setUserData } = useLocalStorage();
 
+  const { userData } = useLocalStorage()
+
   // Getting width of the curriculum container
   useLayoutEffect(() => {
     const container = document.querySelector('#cv-container')
